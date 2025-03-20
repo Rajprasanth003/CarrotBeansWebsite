@@ -1,0 +1,116 @@
+ <div class="logo-effect">
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <div>
+                      <div>
+                        <div>
+                          <b>B</b>
+                          <b>I</b>
+                          <b>G</b>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+/* logo-animation */
+
+.logo-effect,
+.logo-effect div {
+  transform-style: preserve-3d;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 150%;
+  height: 300%;
+  outline: 10px solid black;
+}
+
+.logo-effect {
+  transform: rotateX(-50deg) rotateZ(40deg);
+  margin-top: -30px;
+}
+
+.logo-effect div {
+  width: 90%;
+  height: 85%;
+  animation: raise 5s ease-in-out infinite;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  transform: translateZ(20px) rotateX(0deg);
+}
+
+.logo-effect b {
+  color: black;
+  font-size: 230pt;
+  animation: raise 5s ease-in-out infinite;
+  transform: translateZ(20px) rotateX(0deg);
+}
+
+@keyframes raise {
+  0% {
+    transform: translateZ(20px) rotateX(0deg);
+  }
+  50% {
+    transform: translateZ(-60px) rotateX(10deg);
+  }
+  100% {
+    transform: translateZ(20px) rotateX(0deg);
+  }
+}
+
+.logo-effect b:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.logo-effect b:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.logo-effect b:nth-child(3) {
+  animation-delay: 1.5s;
+}
+
+.logo-effect > div > div {
+  animation-delay: 0.5s;
+}
+
+.logo-effect > div > div > div {
+  animation-delay: 1s;
+}
+
+.logo-effect > div > div > div > div {
+  animation-delay: 1.5s;
+}
+
+.logo-effect > div > div > div > div > div {
+  animation-delay: 2s;
+}
+
+.logo-effect > div > div > div > div > div > div {
+  animation-delay: 2.5s;
+}
+
+.logo-effect > div > div > div > div > div > div > div {
+  animation-delay: 3s;
+}
+
+.logo-effect > div > div > div > div > div > div > div > div {
+  animation-delay: 3.5s;
+}
+
+.logo-effect > div > div > div > div > div > div > div > div > div {
+  animation-delay: 4s;
+}

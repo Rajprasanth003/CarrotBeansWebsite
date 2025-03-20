@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>E-commerce Landing page Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body>
+	<nav class="nav">
+        <div class="container">
+            <div class="logo-section">
+                <a href="#">CarrotBeans</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><div class="cart"><img src="images/shopping-cart.png" alt="shopping-cart"></div></li>
+                </ul>
+                
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <!-- Homepage -->
+  
+    <section class="homepage">
+        <div class="container-homepage">
+            <h1 class="heading-homepage">Carrotbeans.</h1>
+            <h2 class="homepage-subtitle">Cherish the Movement</h5>
+            <p class="heading-para">We will be celebrating the launch of our new site very soon!</p>
+            <button class="notify-btn">Notify Me!</button>
+        </div>
+        <canvas id="confetti"></canvas>
+    </section>
+    
+
+
+    <!-- item-list -->
+    <section class="item-list-container">
+        <div class="item-list">
+            <img src="images/p1.avif" />    
+            <p>Birthday Gifts</p>
+        </div>
+        <div class="item-list">
+            <img src="images/p2.avif" />    
+            <p>rochet Flowers</p>
+        </div>
+        <div class="item-list">
+            <img src="images/p3.avif" />    
+            <p>Gift Hampers</p>
+        </div>
+        <div class="item-list">
+            <img src="images/p4.avif" />    
+            <p>For Him</p>
+        </div>
+        <div class="item-list">
+            <img src="images/p5.avif" />    
+            <p>Anniversary Gifts</p>
+        </div>
+        <div class="item-list">
+            <img src="images/p3.avif" />    
+            <p>Gift Hampers</p>
+        </div>
+        <div class="item-list">
+            <img src="images/p4.avif" />    
+            <p>For Him</p>
+        </div>
+        <div class="item-list">
+            <img src="images/p5.avif" />    
+            <p>Anniversary Gifts</p>
+        </div>
+    </section>
+ 
+    <section class="carousel-container">
+        
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/p1.avif" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/p2.avif" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/p3.avif" alt="Slide 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/p4.avif" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/p5.avif" alt="Slide 3">
+                </div>
+            </div>
+    
+            <!-- Navigation Buttons -->
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+    
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </div>
+    
+    </section>
+
+    <section class="scrollable-text">
+        <div class="marquee">
+            <div class="marquee-content">
+                Find unique and usable products &nbsp; | &nbsp; Flat 50% discount &nbsp; | &nbsp; Coupons available &nbsp; | &nbsp; Enjoy the gifting &nbsp; | &nbsp;
+            </div>
+            <div class="marquee-content">
+                Find unique and usable products &nbsp; | &nbsp; Flat 50% discount &nbsp; | &nbsp; Coupons available &nbsp; | &nbsp; Enjoy the gifting &nbsp; | &nbsp;
+            </div>
+        </div>
+    </section>
+
+    
+    
+    <!-- Product Cards -->
+    <section class="item-cards-main">
+        <div class="slider-container">
+            <div class="product-container">
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="images/p1.avif" alt="Product 1">
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="card-content">
+                        <h3>Choco Cuddle Special Love Bouquet</h3>
+                        <p class="price">
+                            <span class="discounted-price">₹ 2,450</span>
+                            <span class="original-price">₹ 2,890</span>
+                            <span class="discount">(Save 15%)</span>
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="images/p1.avif" alt="Product 1">
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="card-content">
+                        <h3>Choco Cuddle Special Love Bouquet</h3>
+                        <p class="price">
+                            <span class="discounted-price">₹ 2,450</span>
+                            <span class="original-price">₹ 2,890</span>
+                            <span class="discount">(Save 15%)</span>
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="images/p1.avif" alt="Product 1">
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="card-content">
+                        <h3>Choco Cuddle Special Love Bouquet</h3>
+                        <p class="price">
+                            <span class="discounted-price">₹ 2,450</span>
+                            <span class="original-price">₹ 2,890</span>
+                            <span class="discount">(Save 15%)</span>
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="images/p1.avif" alt="Product 1">
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="card-content">
+                        <h3>Choco Cuddle Special Love Bouquet</h3>
+                        <p class="price">
+                            <span class="discounted-price">₹ 2,450</span>
+                            <span class="original-price">₹ 2,890</span>
+                            <span class="discount">(Save 15%)</span>
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="images/p1.avif" alt="Product 1">
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="card-content">
+                        <h3>Choco Cuddle Special Love Bouquet</h3>
+                        <p class="price">
+                            <span class="discounted-price">₹ 2,450</span>
+                            <span class="original-price">₹ 2,890</span>
+                            <span class="discount">(Save 15%)</span>
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="images/p1.avif" alt="Product 1">
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="card-content">
+                        <h3>Choco Cuddle Special Love Bouquet</h3>
+                        <p class="price">
+                            <span class="discounted-price">₹ 2,450</span>
+                            <span class="original-price">₹ 2,890</span>
+                            <span class="discount">(Save 15%)</span>
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="images/p1.avif" alt="Product 1">
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="card-content">
+                        <h3>Choco Cuddle Special Love Bouquet</h3>
+                        <p class="price">
+                            <span class="discounted-price">₹ 2,450</span>
+                            <span class="original-price">₹ 2,890</span>
+                            <span class="discount">(Save 15%)</span>
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="images/p1.avif" alt="Product 1">
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="card-content">
+                        <h3>Choco Cuddle Special Love Bouquet</h3>
+                        <p class="price">
+                            <span class="discounted-price">₹ 2,450</span>
+                            <span class="original-price">₹ 2,890</span>
+                            <span class="discount">(Save 15%)</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="nav-buttons">
+                <button onclick="moveSlider(-1)">❮</button>
+                <button onclick="moveSlider(1)">❯</button>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <!-- Video Section -->
+    <section class="video-section-main">
+        <div class="gift-section">
+            <div class="gift-item">
+                <div class="media-container">
+                    <img src="images/p1.avif" alt="Gift for Women" class="gift-image">
+                    <video class="gift-video" muted loop>
+                        <source src="images/video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="gift-text">
+                <h2>GIFTS FOR WOMEN</h2>
+                <p>Explore our collection of Gifts for Women and discover presents...</p>
+                <button class="shop-btn">Shop Now →</button>
+            </div>
+        </div>
+        
+        <div class="gift-section reverse">
+            <div class="gift-item">
+                <div class="media-container">
+                    <img src="images/p2.avif" alt="Gift for Men" class="gift-image">
+                    <video class="gift-video" muted loop>
+                        <source src="images/video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="gift-text">
+                <h2>GIFTS FOR MEN</h2>
+                <p>Discover our collection of gifts for men, curated with premium...</p>
+                <button class="shop-btn">Shop Now →</button>
+            </div>
+           
+        </div>  
+    </section>
+    
+    <!-- Images List -->
+
+    <section class="image-section">
+        <div class="carousel-image-section">
+            <div class="carousel-item-image-section">
+                <div class="carousel-box">
+                    <div class="title">Paris</div>
+                    <div class="num">01</div>
+                    <img src="images/image1.jpg"/>
+                </div>
+            </div>
+        
+            <div class="carousel-item-image-section">
+                <div class="carousel-box">
+                    <div class="title">Warsaw</div>
+                    <div class="num">02</div>
+                    <img src="images/image2.jpg" />
+                </div>
+            </div>
+        
+            <div class="carousel-item-image-section">
+                <div class="carousel-box">
+                    <div class="title">Madrid</div>
+                    <div class="num">03</div>
+                    <img src="images/image3.jpg"/>
+                </div>
+            </div>
+        
+            <div class="carousel-item-image-section">
+                <div class="carousel-box">
+                    <div class="title">Sydney</div>
+                    <div class="num">04</div>
+                    <img src="images/image4.jpg" />
+                </div>
+            </div>
+        
+            <div class="carousel-item-image-section">
+                <div class="carousel-box">
+                    <div class="title">Istanbul</div>
+                    <div class="num">05</div>
+                    <img src="images/image5.jpg" />
+                </div>
+            </div>
+        
+            <div class="carousel-item-image-section">
+                <div class="carousel-box">
+                    <div class="title">Prague</div>
+                    <div class="num">06</div>
+                    <img src="images/image6.jpg" />
+                </div>
+            </div>
+        
+            <div class="carousel-item-image-section">
+                <div class="carousel-box">
+                    <div class="title">Munich</div>
+                    <div class="num">07</div>
+                    <img src="images/image7.jpg" />
+                </div>
+            </div>
+        
+            <div class="carousel-item-image-section">
+                <div class="carousel-box">
+                    <div class="title">Venice</div>
+                    <div class="num">08</div>
+                    <img src="images/image8.jpg"/>
+                </div>
+            </div>
+        
+            <div class="carousel-item-image-section">
+                <div class="carousel-box">
+                    <div class="title">Oslo</div>
+                    <div class="num">09</div>
+                    <img src="images/p3.avif" />
+                </div>
+            </div>
+            <div class="carousel-item-image-section">
+                <div class="carousel-box">
+                    <div class="title">London</div>
+                    <div class="num">10</div>
+                    <img src="images/p4.avif"/>
+                </div>
+            </div>
+        </div>
+        
+        <div class="layout">
+        
+        
+        <div class="cursor"></div>
+        <div class="cursor cursor2"></div>
+    </section>
+    
+<!-- Reveal-Container Section -->
+    <section class="reveal-card-container">
+        <div class="reveal-container">
+            <div class="reveal-card">
+                <img src="image.png" alt="Header Image" class="header-image">
+                <h2>Sell internationally</h2>
+                <p>Take your eCommerce website to international markets with Wix Multilingual...</p>
+                <button>Get Started</button>
+            </div>
+            <div class="reveal-card">
+                <img src="image.png" alt="Header Image" class="header-image">
+                <h2>Sell internationally</h2>
+                <p>Take your eCommerce website to international markets with Wix Multilingual...</p>
+                <button>Get Started</button>
+            </div>
+            <div class="reveal-card">
+                <img src="image.png" alt="Header Image" class="header-image">
+                <h2>Sell internationally</h2>
+                <p>Take your eCommerce website to international markets with Wix Multilingual...</p>
+                <button>Get Started</button>
+            </div>
+            <div class="reveal-card">
+                <img src="image.png" alt="Header Image" class="header-image">
+                <h2>Sell internationally</h2>
+                <p>Take your eCommerce website to international markets with Wix Multilingual...</p>
+                <button>Get Started</button>
+            </div>
+            <div class="reveal-card">
+                <img src="image.png" alt="Header Image" class="header-image">
+                <h2>Sell internationally</h2>
+                <p>Take your eCommerce website to international markets with Wix Multilingual...</p>
+                <button>Get Started</button>
+            </div>
+        </div>
+    
+    </section>
+
+
+
+    
+
+<!-- Footer Section -->
+    
+    <section class="footer-section">
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="footer-top-left">
+                    <input type="email" placeholder="Enter your email">
+                    <button class="subscribe-btn">→</button>
+                </div>
+                <div class="footer-top-middle">
+                    <ul class="nav-links">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-top-right">
+                    <div class="social-icons">
+                        <a href="#"><img src="images/facebook.png" class="social-icons-img"/></a>
+                        <a href="#"><img src="images/instagram.png" class="social-icons-img"/></a>
+                        <a href="#"><img src="images/twitter.png" class="social-icons-img"/></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <ul class="footer-links">
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom-middle">
+                    <p class="brand">CarrotBeans</p>
+                </div>
+                <div class="footer-bottom-right">
+                    <p class="copyright">© 2025. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+
+
+    <section class="latest-arrivals">
+        <!-- <h1 class="latest-heading">Our Latest Arrivals</h1> -->
+    </section>
+   
+        
+    
+
+
+
+
+    
+    <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+    
+    
+
+    <script src="script.js"></script> 
+</body>
+
+</html>
