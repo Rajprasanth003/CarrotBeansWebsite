@@ -1559,4 +1559,13 @@ body {
         height: 40px;
     }
 }
+@media (max-width: 600px){
+    .scroll-arrow-container{
+        bottom: 0px;
+    }
+    .scroll-arrow {
+        width: 40px;
+        height: 40px;
+    }
+}
     
