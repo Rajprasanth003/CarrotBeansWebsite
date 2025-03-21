@@ -136,22 +136,41 @@ function moveSlider(direction) {
 // VIdeo Section
 
 document.addEventListener("DOMContentLoaded", function () {
-  function setupVideoHover(videoId, imageId) {
-      const video = document.getElementById(videoId);
-      const image = document.getElementById(imageId);
+    // Get all videos
+    const videos = document.querySelectorAll('.gift-video');
+    
+    // Set up event listeners for each video
+    videos.forEach(video => {
+        // Get the parent container
+        const container = video.closest('.media-container');
+        
+        // Add hover events to container
+        container.addEventListener("mouseenter", function() {
+            video.play();
+        });
+        
+        container.addEventListener("mouseleave", function() {
+            video.pause();
+            video.currentTime = 0; // Reset video
+        });
+        
+        // For mobile: make videos work on touch
+        video.addEventListener("touchstart", function() {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+                video.currentTime = 0;
+            }
+        });
+    });
 
-      video.addEventListener("mouseover", function () {
-          video.play();
-      });
-
-      video.addEventListener("mouseout", function () {
-          video.pause();
-          video.currentTime = 0; // Reset video when mouse leaves
-      });
-  }
-
-  setupVideoHover("womenVideo", "womenImage");
-  setupVideoHover("menVideo", "menImage");
+    // For mobile devices, start videos when they're visible
+    if (window.matchMedia("(max-width: 768px)").matches) {
+        videos.forEach(video => {
+            video.play();
+        });
+    }
 });
 
 
@@ -305,3 +324,32 @@ initConfetti();
 animateConfetti();
 
 
+// Scroll JS Code Section
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Get all scroll arrows
+    const scrollArrows = document.querySelectorAll('.scroll-arrow');
+
+    // Add click event to each arrow
+    scrollArrows.forEach((arrow, index) => {
+        arrow.addEventListener('click', function () {
+            // Get the next section
+            const nextSection = document.getElementById(`item-list-container`);
+
+            // If next section exists, scroll to it with animation
+            if (nextSection) {
+                nextSection.scrollIntoView({ behavior: 'smooth' });
+
+                // Add animation effect
+                nextSection.style.opacity = 0;
+                nextSection.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    nextSection.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+                    nextSection.style.opacity = 1;
+                    nextSection.style.transform = 'translateY(0)';
+                }, 100);
+            }
+        });
+    });
+});

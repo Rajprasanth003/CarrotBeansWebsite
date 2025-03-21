@@ -41,6 +41,13 @@
             <!-- <h2 class="homepage-subtitle">Cherish the Movement</h5>
             <p class="heading-para">We will be celebrating the launch of our new site very soon!</p>
             <button class="notify-btn">Notify Me!</button> -->
+            <div class="scroll-arrow-container">
+                <div class="scroll-arrow" id="scrollArrow2">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 10L12 15L17 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
         </div>
         <canvas id="confetti"></canvas>
     </section>
@@ -48,7 +55,7 @@
 
 
     <!-- item-list -->
-    <section class="item-list-container">
+    <section class="item-list-container" id="item-list-container">
         <div class="item-list">
             <img src="images/p1.avif" />    
             <p>Birthday Gifts</p>
@@ -117,17 +124,23 @@
         </div>
     
     </section>
-
     <section class="scrollable-text">
         <div class="marquee">
             <div class="marquee-content">
-                Find unique and usable products &nbsp; | &nbsp; Flat 50% discount &nbsp; | &nbsp; Coupons available &nbsp; | &nbsp; Enjoy the gifting &nbsp; | &nbsp;
+                <span>Find unique and usable products</span>
+                <span>| Flat 50% discount</span>
+                <span>| Coupons available</span>
+                <span>| Enjoy the gifting</span>
             </div>
             <div class="marquee-content">
-                Find unique and usable products &nbsp; | &nbsp; Flat 50% discount &nbsp; | &nbsp; Coupons available &nbsp; | &nbsp; Enjoy the gifting &nbsp; | &nbsp;
+                <span>Find unique and usable products</span>
+                <span>| Flat 50% discount</span>
+                <span>| Coupons available</span>
+                <span>| Enjoy the gifting</span>
             </div>
         </div>
     </section>
+
 
     
     
@@ -270,8 +283,8 @@
         <div class="gift-section">
             <div class="gift-item">
                 <div class="media-container">
-                    <img src="images/p1.avif" alt="Gift for Women" class="gift-image">
-                    <video class="gift-video" muted loop>
+                    <img src="images/p1.avif" alt="Gift for Women" class="gift-image" id="womenImage">
+                    <video class="gift-video" muted loop id="womenVideo">
                         <source src="images/video1.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -287,8 +300,8 @@
         <div class="gift-section reverse">
             <div class="gift-item">
                 <div class="media-container">
-                    <img src="images/p2.avif" alt="Gift for Men" class="gift-image">
-                    <video class="gift-video" muted loop>
+                    <img src="images/p2.avif" alt="Gift for Men" class="gift-image" id="menImage">
+                    <video class="gift-video" muted loop id="menVideo">
                         <source src="images/video1.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -299,7 +312,6 @@
                 <p>Discover our collection of gifts for men, curated with premium...</p>
                 <button class="shop-btn">Shop Now →</button>
             </div>
-           
         </div>  
     </section>
     
