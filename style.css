@@ -74,6 +74,12 @@ body {
     color: #00E676;
 }
 
+@media (max-width: 830px){
+    .nav div.main_list ul li a {
+        font-size: 1.9rem;
+    }
+}
+
 
 /* Home section */
 
