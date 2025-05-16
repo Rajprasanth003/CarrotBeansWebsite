@@ -1262,6 +1262,7 @@ body {
   color: white;
   font-size: 20px;
   margin-bottom: 15px;
+  margin-top: 20px;
 }
 .reveal-card p{
     font-size: 20px;
@@ -1278,7 +1279,17 @@ body {
     margin: 30px;
 }
 
-
+@media (max-width: 425px){
+    .stars {
+        font-size: 15px;
+    }
+    .author{
+        font-size: 15px;
+    }
+    .reveal-card p{
+        font-size: 13px;
+    }
+}
 
 
 
