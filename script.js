@@ -353,3 +353,20 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
+
+document.querySelectorAll('.image-container img').forEach(img => {
+    const originalSrc = img.src;
+    const hoverSrc = img.getAttribute('data-hover');
+
+    if (hoverSrc) {
+        img.addEventListener('mouseenter', () => {
+            img.src = hoverSrc;
+        });
+        img.addEventListener('mouseleave', () => {
+            img.src = originalSrc;
+        });
+    }
+});
+
